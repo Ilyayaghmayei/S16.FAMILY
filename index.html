@@ -170,11 +170,127 @@ p {
         width: 140px;
     }
 }
+.site-logo {
+    transition: transform 0.8s ease, box-shadow 0.8s ease !important;
+    width: 210px;
+    height: 210px;
+}
+
+.site-logo:hover {
+    transform: scale(1.12) !important;
+    box-shadow:
+        0 0 15px #e580ff,
+        0 0 35px #c040ff,
+        0 0 60px #9c00ff !important;
+}
+
+.site-header {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto 40px;
+    padding: 15px 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    box-sizing: border-box;
+
+}
+.announcements {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.announcement {
+    flex: 1;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.45);
+    border: 2px solid #9c27b0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #9c27b0;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.announcement:hover {
+    border-color: #e580ff;
+    box-shadow:
+        0 0 15px #e580ff,
+        0 0 35px #c040ff,
+        0 0 70px #9c00ff;
+    transform: scale(1.03);
+}
+
+.announcement span {
+    font-size: 35px;
+}
+
+.announcement h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.announcement p {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+}
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
 </style>
 </head>
 <body>
-    <h1>S16.FAMILY / اس16فمیلی</h1>
-    <p>فعال ترین کلن در کالاف دیوتی موبایل
+   <body>
+
+<header class="site-header">
+
+    <img src="logo.png.png" alt="S16 Logo" class="site-logo">
+
+    <h1>S16&lt;FAMILY</h1>
+    <h2>فعال ترین کلن در کالاف دیوتی موبایل</h2>
+</header>
+    <h2>چرا کلن ما؟؟؟ ✨ </h2>
+
+<div class="announcements">
+
+    <div class="announcement">
+        <span>📢</span>
+        <h3>رنک بندی اعضا</h3>
+        <p>تمامی اعضا در کلن ما مقام خاص و منحصر به فرد دارند💀🔥</p>
+    </div>
+
+    <div class="announcement">
+        <span>⚔️</span>
+        <h3>هر ماه کلن وار</h3>
+        <p>سعی میکنیم هر ماه 2 کلن وار یا حتی بیشتر برگذار کنیم🔥</p>
+    </div>
+
+    <div class="announcement">
+        <span>🏆</span>
+<h3>هر ماه تورنومنت</h3>
+<p>هر ماه تورنومنت همراه با جوایز نفیس</p>
+</div>
+
+</div>
     <hr>
     <h1>قوانین کلن S16.FAMILY</h1>
     <br>
@@ -207,7 +323,19 @@ p {
 <h2>📸 گالری S16&lt;FAMILY</h2>
 
 <div class="gallery">
-    <p>عکس های کلن به زودی...</p>
+
+<div class="gallery-box">
+
+    <div class="gallery-images">
+        <img src="image1.jpg.jpg" alt="S16 FAMILY">
+        <img src="image2.jpg.jpg" alt="S16 FAMILY">
+        <img src="image3.jpg.jpg" alt="S16 FAMILY">
+        <img src="image4.jpg.jpg" alt="S16 FAMILY">
+        <img src="image5.jpg.jpg" alt="S16 FAMILY">
+    </div>
+</div>
+
+
 </div>
 
 </body>
