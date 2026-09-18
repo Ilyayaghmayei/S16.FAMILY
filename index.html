@@ -256,6 +256,28 @@ p {
     object-fit: cover;
     border-radius: 12px;
 }
+@media (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 </style>
 </head>
 <body>
